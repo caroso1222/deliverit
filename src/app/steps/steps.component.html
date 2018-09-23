@@ -1,0 +1,6 @@
+<div class="step d-flex align-items-center"
+     [class.step--active]="i === activeStep - 1"
+    *ngFor="let step of steps; let i = index">
+  <span class="step__circle d-flex mr-3 justify-content-center align-items-center">{{ i+1 }}</span>
+  <span class="step__text">{{ step }}</span>
+</div>

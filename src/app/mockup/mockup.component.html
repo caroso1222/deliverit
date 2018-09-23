@@ -1,0 +1,11 @@
+<img class="hand-mock" src="/assets/img/hand.png" alt="hand">
+<div class="wrapper">
+  <img [src]="frontImage"
+       *ngIf="frontImage"
+       [class.animate]="animate"
+       class="front-image" [class.front-image--transition]="transition">
+  <img [src]="backImage"
+       [class.animate]="animate"
+       class="back-image" [class.back-image--transition]="transition">
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,45 @@
+::host {
+  display: block;
+  position: relative;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 491px;
+  width: 253px;
+  position: absolute;
+  top: 55px;
+  left: 177px;
+}
+
+.front-image, .back-image {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+}
+
+.animate {
+  transition: all ease 0.5s;
+}
+
+.hand-mock {
+  position: relative;
+  left: -133px;
+}
+
+.front-image {
+  z-index: 10;
+  left: 0;
+  &--transition {
+    transform: translateX(-100%);
+  }
+}
+
+.back-image {
+  z-index: 5;
+  left: 100%;
+  &--transition {
+    transform: translateX(-100%);
+  }
+}

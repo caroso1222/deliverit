@@ -1,0 +1,34 @@
+$purple: #6526EA;
+$black: #332A45;
+$red: #E8254F;
+
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+
+.circle {
+  position: relative;
+  transition: all ease 0.35s;
+  height: 59px;
+  width: 59px;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  display: block;
+  opacity: 0;
+
+  &--pressed {
+    transform: scale(0.7);
+  }
+
+  &--shown {
+    opacity: 1;
+  }
+
+  &--released {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
